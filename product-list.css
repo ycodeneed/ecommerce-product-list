@@ -186,7 +186,7 @@
     gap: 2px;
   }
   
-  .product-addCart-button:hover {
+  .product-Cart-button:hover {
     background-color: #c585ac;
   }
   
@@ -286,7 +286,7 @@
   }
 
   #outerBody {
-    height: 100%;
+    height: calc(100% - 102px);
     color: black;
     overflow: auto;
     line-height: initial;
