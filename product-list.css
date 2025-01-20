@@ -8,7 +8,7 @@
   overflow: unset;
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   min-width: max-content;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
