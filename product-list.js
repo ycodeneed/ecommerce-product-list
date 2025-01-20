@@ -1,7 +1,7 @@
 document.writeln('<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">');
 var products = {
     1: { id: 1, name: 'Smartphone', category: 'electronics', price: 699, image: '/shopping.png' },
-    2: { id: 2, name: 'Laptop', category: 'electronics', price: 999, image: '/shopping4.png' },
+    2: { id: 2, name: 'Laptop', category: 'electronics', price: 999, image: '/shopping.png' },
     3: { id: 3, name: 'T-Shirt', category: 'fashion', price: 19, image: '/shopping.png' },
     4: { id: 4, name: 'Sofa', category: 'home', price: 499, image: '/shopping.png' }
 };
