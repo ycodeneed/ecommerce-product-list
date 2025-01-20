@@ -3,8 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="product-list.js?v=3"></script>
-        <link href="product-list.css?v=5" rel="stylesheet">
+        <script src="product-list.js?v=1"></script>
+        <link href="product-list.css?v=1" rel="stylesheet">
     </head>
     <body>
         <div class="body-container">
@@ -49,6 +49,27 @@
                             <option value="Fashion">Fashion</option>
                             <option value="Outdoors">Outdoors</option>
                         </select>
+                    </div>
+                    <div class="priceFilterOuter">
+                        <div class="priceFilterHead">Price</div>
+                        <div class="priceFilter">
+                            <label class="price-option" for="nonePrice">
+                                <input type="radio" id="nonePrice" name="price" value="none">
+                                <span>None</span>
+                            </label>
+                            <label class="price-option" for="priceUnder250">
+                              <input type="radio" id="priceUnder250" name="price" value="0-250">
+                              <span>Under 250</span>
+                            </label>
+                            <label class="price-option" for="price250to500">
+                              <input type="radio" id="price250to500" name="price" value="250-500">
+                              <span>250 - 500</span>
+                            </label>
+                            <label class="price-option"  for="priceAbove500">
+                              <input type="radio" id="priceAbove500" name="price" value="500+">
+                              <span>500 and above</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div id="outerBody" class="enContent outerBody">
