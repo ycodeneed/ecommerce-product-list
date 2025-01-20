@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 var STORE = {
     init: function () {
-        let loaderDiv = encodeLib.loader({ id: "loader", position: "absolute", backgroundColor: "#f2f2f2", zIndex: "6000", top: "0", left: "0" });
+        let loaderDiv = encodeLib.loader({ id: "loader", position: "absolute", backgroundColor: "#f9f9f9", zIndex: "6000", top: "0", left: "0" });
         encodeLib.insert(encodeLib.BODY, loaderDiv, { addOn: "prepend" });
 
         var categoryFilter = document.getElementById('categoryFilter');
