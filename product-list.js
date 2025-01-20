@@ -1,9 +1,29 @@
 document.writeln('<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">');
 var products = {
-    1: { id: 1, name: 'Smartphone', category: 'electronics', price: 699, image: '/shopping.png' },
-    2: { id: 2, name: 'Laptop', category: 'electronics', price: 999, image: '/shopping.png' },
-    3: { id: 3, name: 'T-Shirt', category: 'fashion', price: 19, image: '/shopping.png' },
-    4: { id: 4, name: 'Sofa', category: 'home', price: 499, image: '/shopping.png' }
+    1: { "id": 1, "name": "Wireless Headphones", "category": "Electronics", "price": 59.99, "image": "https://as1.ftcdn.net/v2/jpg/11/03/84/80/1000_F_1103848035_Z9GUDfbk7Eq2myUsClFrmdGpZ0fqh1bm.webp" },
+    2: { "id": 2, "name": "Smartphone Case", "category": "Accessories", "price": 19.99, "image": "https://as2.ftcdn.net/v2/jpg/11/98/62/83/1000_F_1198628381_WWZYEP2oNOq3luh83p54bzECl5sMcX42.jpg" },
+    3: { "id": 3, "name": "Gaming Mouse", "category": "Electronics", "price": 29.99, "image": "https://as1.ftcdn.net/v2/jpg/11/29/43/32/1000_F_1129433260_w2m5OscmfXpYc95BWFRngUTcnSScCLII.jpg" },
+    4: { "id": 4, "name": "Laptop Backpack", "category": "Bags", "price": 39.99, "image": "https://as1.ftcdn.net/v2/jpg/04/24/35/26/1000_F_424352664_CZOAYTylPj3LJtFfriW4HNfbsb7DiBxk.jpg" },
+    5: { "id": 5, "name": "Running Shoes", "category": "Footwear", "price": 89.99, "image": "https://as2.ftcdn.net/v2/jpg/01/43/45/77/1000_F_143457749_3x7KtQlCL9sDzbRShBAPXLzHrNoZwF7q.jpg" },
+    6: { "id": 6, "name": "Bluetooth Speaker", "category": "Electronics", "price": 49.99, "image": "https://as1.ftcdn.net/v2/jpg/01/64/37/64/1000_F_164376403_FIx6kAnQpdILiISn7ptIOqEN7JBrr6fw.jpg" },
+    7: { "id": 7, "name": "Fitness Tracker", "category": "Wearables", "price": 79.99, "image": "https://as2.ftcdn.net/v2/jpg/03/35/64/23/1000_F_335642359_6kLpWhWsaNKKxHmW5ut1WF1ZFVls1qEx.jpg" },
+    8: { "id": 8, "name": "Water Bottle", "category": "Home & Kitchen", "price": 14.99, "image": "https://as2.ftcdn.net/v2/jpg/02/14/39/53/1000_F_214395346_2GrgCaw9rrMAkeSNnjFOmXBIJjhQ7A6z.jpg" },
+    9: { "id": 9, "name": "Desk Lamp", "category": "Furniture", "price": 24.99, "image": "https://as1.ftcdn.net/v2/jpg/08/89/40/80/1000_F_889408056_KgKallJT5ydlxbpEPWshCUVdkWj3U6tu.jpg" },
+    10: { "id": 10, "name": "Electric Toothbrush", "category": "Personal Care", "price": 34.99, "image": "https://as1.ftcdn.net/v2/jpg/00/52/92/42/1000_F_52924241_VVGajYQuipF3KOaXwVkMiApjJN0aOJHj.jpg" },
+    11: { "id": 11, "name": "Smart Watch", "category": "Wearables", "price": 129.99, "image": "https://as1.ftcdn.net/v2/jpg/02/95/76/42/1000_F_295764233_fuwRvw5QfssDCCQICNkWhYBwAK2QYs04.jpg" },
+    12: { "id": 12, "name": "Yoga Mat", "category": "Fitness", "price": 22.99, "image": "https://as1.ftcdn.net/v2/jpg/09/42/24/82/1000_F_942248235_wjqUYqozxTGKQnU2vn3qLGkm0hAEJRSC.jpg" },
+    13: { "id": 13, "name": "Electric Kettle", "category": "Home & Kitchen", "price": 39.99, "image": "https://as2.ftcdn.net/v2/jpg/09/37/37/53/1000_F_937375369_g5GfwHzXSimSgh9pAExmCxkZAsoIcCgB.webp" },
+    14: { "id": 14, "name": "Portable Charger", "category": "Accessories", "price": 25.99, "image": "https://as1.ftcdn.net/v2/jpg/08/59/30/30/1000_F_859303029_2YPuiw32mEbZvDpTVL4TE1aecKzacD3I.webp" },
+    15: { "id": 15, "name": "Sunglasses", "category": "Fashion", "price": 19.99, "image": "https://as2.ftcdn.net/v2/jpg/01/62/93/37/1000_F_162933786_2iR00Gntu0wf6V2x1EqLlE0tNPYzIUWA.jpg" },
+    16: { "id": 16, "name": "Leather Wallet", "category": "Accessories", "price": 29.99, "image": "https://as2.ftcdn.net/v2/jpg/05/83/03/69/1000_F_583036921_KAJ9Yx6rMTycaeZvYUbIo4yxBT5c4sv1.webp" },
+    17: { "id": 17, "name": "Wireless Keyboard", "category": "Electronics", "price": 49.99, "image": "https://as2.ftcdn.net/v2/jpg/09/89/67/41/1000_F_989674147_JaeCBYwZM8hqGppgtKabdCDFD3RpRm4P.jpg" },
+    18: { "id": 18, "name": "Cooking Pan", "category": "Home & Kitchen", "price": 34.99, "image": "https://as1.ftcdn.net/v2/jpg/05/27/91/82/1000_F_527918222_pC8zhcDSZJjcKi0z4YoBW8thbjsGIUAM.webp" },
+    19: { "id": 19, "name": "Camping Tent", "category": "Outdoors", "price": 89.99, "image": "https://as2.ftcdn.net/v2/jpg/02/36/31/83/1000_F_236318320_nDa7zpTVK7HSbtJbw7sTYhiiHpoYSF05.jpg" },
+    20: { "id": 20, "name": "Office Chair", "category": "Furniture", "price": 149.99, "image": "https://as2.ftcdn.net/v2/jpg/05/33/64/67/1000_F_533646797_5JlZDHPDqVOEOZS4aHpSxk8SwPzJ5g62.webp" },
+    21: { id: 21, name: 'Smartphone', category: 'Electronics', price: 699, image: 'https://as1.ftcdn.net/v2/jpg/01/97/97/24/1000_F_197972442_k2MxYlbDg4XufIp3O64jiJp4VYkExogX.jpg' },
+    22: { id: 22, name: 'Laptop', category: 'Electronics', price: 999, image: 'https://as2.ftcdn.net/v2/jpg/01/67/28/69/1000_F_167286969_jAEAfUY47qQ1SHqf1SyqSYypOsl0fWYF.jpg' },
+    23: { id: 23, name: 'T-Shirt', category: 'Fashion', price: 19, image: 'https://as2.ftcdn.net/v2/jpg/09/18/66/91/1000_F_918669150_YUW52ZrVi4vOFgcCVlzZg451x4uT8zbl.jpg' },
+    24: { id: 24, name: 'Sofa', category: 'Home & Kitchen', price: 499, image: 'https://as2.ftcdn.net/v2/jpg/05/42/96/89/1000_F_542968913_UvXxERTGauNJKvZIzwiY8tX7OjQJp3jF.webp' }
 };
 document.addEventListener("DOMContentLoaded", function (event) {
     encodeLib.init();
