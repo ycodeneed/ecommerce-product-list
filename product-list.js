@@ -44,6 +44,12 @@ var STORE = {
 
         categoryFilter.addEventListener('change', encodeLib.filterAndSortProducts);
         sortOptions.addEventListener('change', encodeLib.filterAndSortProducts);
+        
+        document.getElementById('nonePrice').addEventListener('change', encodeLib.filterAndSortProducts);
+        document.getElementById('priceUnder250').addEventListener('change', encodeLib.filterAndSortProducts);
+        document.getElementById('price250to500').addEventListener('change', encodeLib.filterAndSortProducts);
+        document.getElementById('priceAbove500').addEventListener('change', encodeLib.filterAndSortProducts);
+        
 
         STORE.loader = $("#loader");
         STORE.HTML = $("#outerBody");
@@ -140,6 +146,18 @@ var encodeLib = {
     
         if (category !== 'all') {
           filteredProducts = filteredProducts.filter(product => product.category === category);
+        }
+
+        if(!document.getElementById('nonePrice').checked) {
+            if(document.getElementById('priceUnder250').checked) {
+                filteredProducts = filteredProducts.filter(function(x){ return x.price >= 0 && x.price <= 250});
+            }
+            else if(document.getElementById('price250to500').checked) {
+                filteredProducts = filteredProducts.filter(function(x){ return x.price > 250 && x.price <= 500});
+            }
+            else if(document.getElementById('priceAbove500').checked) {
+                filteredProducts = filteredProducts.filter(function(x){ return x.price > 500});
+            }
         }
     
         if (sort === 'low-to-high') {
