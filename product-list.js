@@ -241,9 +241,11 @@ var encodeLib = {
     },
     openFilterBar: function(thisElement) {
         $('.filter-bar').width("256px");
+        $('.outerBody').width("calc(100% - 256px)");
     },
     closeFilterBar: function(thisElement) {
         $('.filter-bar').width("0");
+        $('.outerBody').width("calc(100% - 0px)");
     },
     insert: function(parentElement, addElements="", insertObject = {}) {
         if(!parentElement) {
