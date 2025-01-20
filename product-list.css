@@ -428,7 +428,7 @@
     }
 
     .filter-bar {
-        width: 0 !important;
+        width: 0;
     }
   }
   
