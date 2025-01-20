@@ -610,3 +610,68 @@ position: relative;
   align-items: center;
   justify-content: flex-start;
 }
+
+.priceFilterOuter {
+  width: 100%;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px 20px;
+}
+
+.priceFilterHead {
+  width: 100%;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.priceFilter .price-option {
+    padding: 8px 10px 6px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    width: max-content;
+    background-color: white;
+    display: inline-block;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+.priceFilter {
+    width: 100%;
+    display: inline-block;
+}
+
+.price-option input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 0px;
+  height: 0;
+}
+
+.price-option span {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  width: calc(100% - 0px);
+  margin-top: -14px;
+}
+
+.price-option input[type="radio"]:checked + span {
+  font-weight: bold;
+  color: #007BFF;
+}
