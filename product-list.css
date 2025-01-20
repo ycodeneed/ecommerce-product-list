@@ -242,6 +242,7 @@ position: relative;
   width: 0;
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 
 #customer-cart {
@@ -326,6 +327,7 @@ position: relative;
   border-radius: 4px;
   outline: none;
   width: 100%;
+  background-color: white;
 }
 
 .header-bar select {
@@ -480,7 +482,11 @@ position: relative;
   }
 
   .filter-bar {
-      width: 0;
+    position: absolute !important;
+    z-index: 1000 !important;
+  }
+  .outerBody {
+    width: 100% !important;
   }
 }
 
@@ -577,15 +583,18 @@ position: relative;
 
 .filter-bar-head {
   width: 100%;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  height: 50px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-size: 18px;
-  padding: 0 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    margin-top: -16px;
 }
 
 .categoryFilterOuter {
@@ -674,4 +683,11 @@ position: relative;
 .price-option input[type="radio"]:checked + span {
   font-weight: bold;
   color: #007BFF;
+}
+
+div#product-list:empty:before {
+  content: "No Products";
+  color: #974c4c47;
+  font-size: 20px;
+  font-weight: 500;
 }
