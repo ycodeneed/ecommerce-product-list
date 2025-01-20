@@ -605,7 +605,7 @@ position: relative;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 0 20px;
 }
 
@@ -613,7 +613,7 @@ position: relative;
   width: 100%;
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   font-size: 16px;
   align-items: center;
@@ -628,7 +628,7 @@ position: relative;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 30px 20px;
 }
 
@@ -636,7 +636,7 @@ position: relative;
   width: 100%;
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   font-size: 16px;
   align-items: center;
